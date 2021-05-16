@@ -1,0 +1,130 @@
+$height: 60px;
+
+.wrapper {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: #fff;
+    height: $height;
+    border-bottom: 1px solid rgba(34,90,89,0.2);
+}
+
+.content {
+    height: $height;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logoTextDark {
+    padding: 0 0 3px 4px;
+}
+
+.searchBox {
+    position: relative;
+    padding: 0 0 0 16px;
+    background: rgba(22,24,35,0.06);
+    border-radius: 92px;
+    border: 1px solid transparent;
+    display: flex;
+    overflow: hidden;
+
+    &:focus-within {
+        border-color: #ccc;
+    }
+
+    &::after {
+        position: absolute;
+        content: "";
+        display: block;
+        width: 1px;
+        height: 28px;
+        background: rgba(22, 24, 35, 0.12);
+        top: 8px;
+        right: 50px;
+    }
+
+    input {
+        width: 292px;
+        padding: 12px 0;
+        font-size: 1.6rem;
+        font-weight: 300;
+        caret-color: var(--primary-color);
+        background-color: transparent;
+    }
+}
+
+.searchBtn {
+    width: 50px;
+    height: 42px;
+    display: inline-block;
+
+    &:hover {
+        cursor: pointer;
+        background-color: rgba(22,24,35,0.03);
+    }
+}
+
+.searchIcon {
+    color: #a7a7ab;
+    font-size: 2rem;
+}
+
+.clearBtn {
+    position: absolute;
+    top: 50%;
+    right: 60px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    padding: 4px;
+}
+
+.clearIcon {
+    color: #afb0b3;
+    font-size: 16px;
+}
+
+.spinner {
+    animation: rotate linear 1s infinite;
+}
+
+.dotsIcon {
+    position: relative;
+    cursor: pointer;
+    height: 20px;
+    margin-left: 16px;
+    font-size: 1.6rem;
+    color: var(--black);
+    font-weight: 500;
+}
+
+.uploadLink {
+    font-size: 1.8rem;
+    margin-right: 20px;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.previewWrapper {
+    padding: 8px 0;
+}
+
+.icon {
+    font-size: 2.2rem;
+    cursor: pointer;
+    &:not(:last-child) {
+        margin-right: 15px;
+    }
+}
+
+.navRight {
+    display: flex;
+    align-items: center;
+}

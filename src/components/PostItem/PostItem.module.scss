@@ -1,0 +1,178 @@
+.wrapper {
+    max-width: 720px;
+    padding: 8px 0 24px 0;
+    margin-left: 24px;
+    
+    &:first-child {
+        padding-top: 24px;
+    }
+}
+
+.separate {
+    border-bottom: 1px solid rgba(22, 24, 35, 0.12);
+}
+
+.header {
+    display: flex;
+    padding: 16px 0;
+}
+
+.avatar {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-color: #ebebeb;
+    overflow: hidden;
+    cursor: pointer;
+
+    &:hover ~ .info .nickname {
+        text-decoration: underline;
+    }
+}
+
+.info {
+    margin: 0 auto 0 16px;
+}
+
+.headingBox {
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight: 300;
+
+    &:hover {
+        cursor: pointer;
+
+        .nickname {
+            text-decoration: underline;
+        }
+    }
+}
+
+.nickname {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.fullname {
+    margin-left: 8px;
+}
+
+.like {
+    color: var(--primary-color) !important;
+}
+
+.dot {
+    padding: 0 8px;
+}
+
+.tickIcon {
+    color: #20d5eb;
+    font-size: 1.4rem;
+    margin-left: 4px;
+}
+
+.postContent {
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+.content {
+    display: flex;
+}
+
+.videoBox {
+    position: relative;
+    margin-left: 72px;
+
+    &:hover {
+        .ctlBtn {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}
+
+.waypoint {
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.video {
+    border-radius: 4px;
+}
+
+.ctlBtn {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    background-color: transparent;
+    color: #fff;
+    font-size: 1.8rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: all linear .2s;
+
+    span {
+        font-size: 1.4rem;
+        font-weight: 300;
+        margin-left: 8px;
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.ctlReport {
+    top: 16px;
+    right: 16px;
+}
+
+.ctlPlay {
+    bottom: 16px;
+    left: 16px;
+}
+
+.ctlVolume {
+    bottom: 16px;
+    right: 16px;
+}
+
+.actionBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+    margin-left: 16px;
+}
+
+.actionBtn {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: rgba(22, 24, 35, 0.06);
+
+    &:hover {
+        cursor: pointer;
+        background-color: rgba(22, 24, 35, 0.2);
+    }
+}
+
+.actionIcon {
+    font-size: 2rem;
+    color: #000;
+}
+
+.reactionCount {
+    font-size: 1.3rem;
+    color: rgba(22, 24, 35, 0.75);
+    padding: 4px 0 10px;
+}

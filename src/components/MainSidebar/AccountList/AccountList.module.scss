@@ -1,0 +1,79 @@
+.wrapper {
+    margin-top: 20px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.heading {
+    color: rgba(22,24,35,0.75);
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+
+.inner {
+    overflow: hidden;
+}
+
+.accountItem {
+    display: flex;
+    align-items: center;
+    padding: 10px 4px;
+
+    &:hover {
+        background-color: rgba(22,24,35,0.03);
+    }
+}
+
+.avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #ebebeb;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.accountBody {
+    margin-left: 12px;
+}
+
+.nickname {
+    font-size: 1.6rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+
+    span {
+        max-width: 135px;
+        display: inline-block;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+}
+
+.name {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.tickIcon {
+    color: #20d5eb;
+    font-size: 1.4rem;
+    margin-left: 4px;
+}
+
+.seeBtn {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin: 12px 0 0 12px;
+    cursor: pointer;
+    padding: 4px;
+    user-select: none;
+}
+
+.seeIcon {
+    margin-left: 6px;
+    font-size: 1.4rem;
+}

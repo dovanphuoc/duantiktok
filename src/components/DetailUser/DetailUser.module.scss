@@ -1,0 +1,97 @@
+.wrapper {
+    padding: 36px 20px 36px 100px;
+    margin-bottom: 20px;
+    padding-right: 52px;
+    position: relative;
+}
+
+.shareInfo {
+    display: flex;
+    flex-direction: row;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.userAvatar {
+    .avatar {
+        cursor: unset;
+        width: 116px;
+        height: 116px;
+        border-radius: 50%;
+        border-width: 0.5px;
+    }
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    .icon {
+        color: var(--facebook-color);
+        font-size: 1.4rem;
+    }
+}
+
+.shareTitle {
+    text-overflow: ellipsis;
+    margin-left: 20px;
+    h2 {
+        padding-bottom: 4px;
+        font-size: 3.2rem;
+        color: var(--text-color);
+    }
+    h1 {
+        font-size: 1.8rem;
+        color: var(--text-color);
+        margin-bottom: 16px;
+    }
+}
+
+.countInfo {
+    display: flex;
+    align-items: center;
+    margin-top: 22px;
+    color: var(--black9);
+    .number {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 25px;
+        display: flex;
+        -webkit-box-align: baseline;
+        align-items: baseline;
+        direction: ltr;
+        strong {
+            font-size: 1.8rem;
+            color: var(--black10);
+        }
+        .unit {
+            font-size: 1.6rem;
+            margin-left: 6px;
+            font-weight: 400;
+            line-height: 22px;
+        }
+    }
+    .number:not(:last-child) {
+        margin-right: 20px;
+    }
+}
+
+.desc {
+    margin-top: 10px;
+    font-size: 1.6rem;
+    font-weight: normal;
+}
+
+.shareLink {
+    margin-top: 5px;
+    font-size: 1.6rem;
+    color: var(--black2);
+    transition: .3s ease;
+    &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    span {
+        margin-left: 5px;
+        font-weight: 600;
+    }
+}

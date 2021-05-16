@@ -1,0 +1,50 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #ebebeb;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.info {
+    margin-top: 16px;
+}
+
+.nickname {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.fullName {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.tickIcon {
+    color: #20d5eb;
+    font-size: 1.4rem;
+    margin-left: 4px;
+}
+
+.analytics {
+    font-size: 16px;
+    margin-top: 8px;
+}
+
+.analyticItem {
+    font-weight: 300;
+
+    &+ .analyticItem {
+        margin-left: 16px;
+    }
+
+    strong {
+        font-weight: 600;
+    }
+}

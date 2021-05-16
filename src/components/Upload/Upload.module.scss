@@ -1,0 +1,252 @@
+.wrapper {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--white);
+}
+
+.title {
+    margin-top: 60px;
+    color: var(--text-color);
+    font-size: 5.6rem;
+    font-weight: 600;
+    .subTitle {
+        font-weight: normal;
+        font-size: 1.8rem;
+        color: var(--grey);
+    }
+}
+
+.uploadBtn {
+    background: var(--black5);
+    border-radius: 8px;
+    width: 306px;
+    height: 544px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.uploadContent {
+    text-align: center;
+}
+
+.uploadImg {
+    width: 49px;
+}
+
+.textMain {
+    margin-top: 29px;
+    font-size: 2rem;
+    color: var(--grey1);
+    font-weight: normal;
+}
+
+.textSub {
+    margin-top: 15px;
+    font-size: 1.5rem;
+    color: var(--grey1);
+    font-weight: normal;
+}
+
+.list {
+    font-size: 1.5rem;
+    color: var(--grey1);
+    padding-left: 40px;
+    margin-top: 20px;
+    text-align: left;
+    li {
+        cursor: pointer;
+    }
+}
+
+.form {
+    padding-left: 100px;
+    margin-top: 40px;
+}
+
+.textContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titleFont {
+    color: var(--text-color);
+    font-size: 2.4rem;
+}
+
+.requireFont {
+    font-size: 1.3rem;
+    color: var(--black2);
+    font-weight: normal;
+}
+
+.gapTop {
+    margin-top: 14px;
+    position: relative;
+}
+
+.input {
+    border: 1px solid var(--black1);
+    border-radius: 2px;
+    min-height: 44px;
+}
+
+.iconStyle {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin-left: 8px;
+    top: 12px;
+    right: 40px;
+    display: flex;
+}
+
+.icon {
+    font-size: 1.8rem;
+    color: var(--black2);
+    font-weight: 500;
+    cursor: pointer;
+    &:first-child {
+        margin-right: 10px;
+    }
+}
+
+.anchor {
+    height: 45px;
+}
+
+.formItem {
+    h3 {
+        font-size: 2.4rem;
+        color: var(--text-color);
+        margin-bottom: 12px;
+        font-weight: normal;
+    }
+}
+
+.borderContainer {
+    border: 1px solid var(--black1);
+    border-radius: 2px;
+    line-height: 0;
+    padding: 9px;
+}
+
+.candidate {
+    background-color: var(--black5);
+    width: 66px;
+    height: 118px;
+    object-fit: cover;
+}
+
+.formItemFlex {
+    margin-top: 45px;
+    display: flex;
+}
+
+.permission {
+    &:first-child {
+        margin-right: 55px;
+    }
+    .title,
+    .heading {
+        font-size: 2.4rem;
+        color: var(--text-color);
+        margin-bottom: 12px;
+        font-weight: normal;
+    }
+    .radioGroup,
+    .checkboxContainer {
+        display: flex;
+        margin-top: 15px;
+        .radio,
+        .checkboxItem {
+            display: flex;
+            align-items: center;
+            margin-right: 32px;
+        }
+        .checkIcon {
+            color: var(--white1);
+            font-size: 1.4rem;
+            width: 100%;
+        }
+        .radio input,
+        .checkboxItem input {
+            display: none;
+        }
+        .radio span,
+        .checkboxItem span {
+            font-size: 1.6rem;
+            font-weight: normal;
+        }
+        .radioChecked,
+        .checkbox {
+            flex: 0 0 22px;
+            display: inline-block;
+            vertical-align: middle;
+            width: 22px;
+            height: 22px;
+            margin-right: 13px;
+            background: var(--white1);
+            border: 1.5px solid var(--black1);
+            box-sizing: border-box;
+            position: relative;
+            border-color: var(--grey2);
+            cursor: pointer;
+        }
+        .radioChecked.borderRadius {
+            border-radius: 11px;
+        }
+        .checkbox.background {
+            background-color: var(--blue);
+            border-radius: 2px;
+        }
+        .radioChecked::before {
+            content: "";
+            display: block;
+            width: 14px;
+            height: 14px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -7px;
+            margin-top: -7px;
+            border-radius: 7px;
+        }
+        .radioChecked.active::before,
+        .checkbox.active::before {
+            background: var(--blue);
+        }
+    }
+}
+
+.btnWrap {
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btnCancel {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: var(--black6);
+    background: transparent;
+    margin-right: 32px;
+    cursor: pointer;
+}
+
+.btnPost {
+    background: var(--black8);
+    color: var(--black7);
+    cursor: not-allowed;
+    font-size: 15px;
+    line-height: 18px;
+    border-radius: 2px;
+    width: 164px;
+    height: 44px
+}

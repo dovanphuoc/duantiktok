@@ -1,0 +1,72 @@
+.wrapper {
+    margin-top: 40px;
+    padding: 0 20px;
+}
+
+.item {
+    padding: 9px;
+    cursor: pointer;
+    .inner {
+        position: relative;
+        padding-top: 130%;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+}
+
+.itemBackdrop, .content, .overlay {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.content {
+    top: 30%;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 20px;
+    background: linear-gradient(rgba(22, 24, 35, 0) 2.92%, rgba(22, 24, 35, 0.5) 98.99%);
+}
+
+.overlay {
+    bottom: 0;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0));
+}
+
+.avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin-bottom: 16px;
+}
+
+.fullName {
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.nickname {
+    color: #fff;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.btnFollow {
+    min-width: 70%;
+    font-weight: 600;
+    padding: 8px 16px;
+}
+
+.tickIcon {
+    color: #20d5eb;
+    background-color: #fff;
+    border-radius: 50%;
+    font-size: 1.3rem;
+    margin-left: 4px;
+}

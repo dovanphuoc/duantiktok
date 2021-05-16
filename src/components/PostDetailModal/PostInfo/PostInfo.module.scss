@@ -1,0 +1,161 @@
+// .wrapper {
+
+// }
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ebebeb;
+    overflow: hidden;
+}
+
+.info {
+    margin-right: auto;
+    margin-left: 12px;
+}
+
+.nickname {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.fullname {
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+.dot {
+    padding: 0 8px;
+}
+
+.tickIcon {
+    color: #20d5eb;
+    font-size: 1.4rem;
+    margin-left: 4px;
+}
+
+.postContent {
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.6;
+    margin-top: 16px;
+    padding-bottom: 16px;
+}
+
+.separate {
+    transform: scaleY(0.5);
+    border-bottom: 1px solid rgba(18, 18, 18, 0.12);
+}
+
+.socialBox, .reactionBox, .shareBox {
+    display: flex;
+    align-items: center;
+}
+
+.socialBox {
+    padding: 16px 0;
+    justify-content: space-between;
+}
+
+.reactBtn {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: rgba(22, 24, 35, 0.06);
+
+    &.liked .reactIcon {
+        color: var(--primary-color);
+    }
+
+    &:hover {
+        cursor: pointer;
+        background-color: rgba(22, 24, 35, 0.2);
+    }
+}
+
+.reactIcon {
+    font-size: 1.8rem;
+}
+
+.reactCount {
+    margin-left: 6px;
+    font-size: 1.3rem;
+
+    + .reactBtn {
+        margin-left: 20px;
+    }
+}
+
+.shareLabel {
+    font-size: 1.5rem;
+}
+
+.shareBtn {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    margin-left: 10px;
+    cursor: pointer;
+    display: flex;
+}
+
+.shareIcon {
+    color: #fff;
+    font-size: 1.4rem;
+    margin: auto;
+}
+
+.whatsapp {
+    background-color: var(--whatsapp-color);    
+}
+
+.facebook {
+    background-color: var(--facebook-color);    
+}
+
+.twitter {
+    background-color: var(--twitter-color);    
+}
+
+.code {
+    background-color: #161823;    
+}
+
+.addressBox {
+    display: flex;
+    align-items: center;
+    margin: 4px 0 16px;
+    border: 1px solid rgba(18, 18, 18, 0.12);
+}
+
+.link {
+    flex: 1;
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.2rem;
+    color: rgba(22, 24, 35, 0.75);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 6px 10px;
+}
+
+.copyLinkBtn {
+    height: 100%;
+    padding: 6px 10px;
+    text-transform: uppercase;
+    background-color: transparent;
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.copyLinkIcon {
+    margin-right: 8px;
+}

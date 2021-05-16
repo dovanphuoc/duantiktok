@@ -1,0 +1,77 @@
+.wrapper {
+    min-width: 480px;
+}
+
+.body {
+    width: 320px;
+    margin: auto;
+}
+
+.heading {
+    margin-bottom: 32px;
+    font-size: 2.2rem;
+    color: #333;
+    text-align: center;
+    margin-top: 28px;
+}
+
+.backBtn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    font-size: 2rem;
+    padding: 24px 20px;
+    cursor: pointer;
+}
+
+.methodItem {
+    display: flex;
+    align-items: center;
+    height: 44px;
+    border: 1px solid rgba(22,24,35,.12);
+    cursor: pointer;
+
+    + .methodItem {
+        margin-top: 16px;
+    }
+}
+
+.methodIcon {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid rgba(22,24,35,.12);
+
+    svg {
+        font-size: 2rem;
+        color: #333;
+    }
+}
+
+.itemBody {
+    flex: 1;
+}
+
+.title {
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 0 16px;
+}
+
+.footer {
+    font-size: 1.4rem;
+    font-weight: 300;
+    border-top: .5px solid rgba(22,24,35,.12);
+    margin-top: 32px;
+    padding: 20px;
+
+    .actionLink {
+        color: #ff4c3a;
+        font-weight: 600;
+        cursor: pointer;
+        user-select: none;
+    }
+}
